@@ -1,0 +1,105 @@
+#container: "docker://continuumio/miniconda3:25.3.1-1"
+
+import pandas as pd
+from pathlib import Path
+
+
+samplesheet = pd.read_csv(Path("config/samplesheet.csv"))
+samplesheet['original_prefix'] = ('data/raw_reads/' + samplesheet.bmc_run + '_' + samplesheet.split_name)
+samplesheet['post_prefix'] = ('data/renamed_fastq/' + samplesheet.condition)
+
+def get_input_raw_reads():
+    return list(samplesheet.original_prefix + '_1_sequence.fastq') + list(samplesheet.original_prefix + '_2_sequence.fastq')
+
+def get_output_raw_reads():
+    return list(samplesheet.post_prefix + '_1.fastq') + list(samplesheet.post_prefix + '_2.fastq')
+
+
+rule all:
+    input:
+        expand("{sample}_{end}.fastq",  sample= samplesheet['post_prefix'], end = ["1", "2"]),
+        expand("data/trimmed_reads/{sample}_{end}_val_{end}.fq",  sample= samplesheet['condition'], end = ["1", "2"]),
+        expand("data/salmon_quantification/{sample}_{genome}", sample=samplesheet["condition"], genome="GRCm39"),
+
+rule symlink_samples:
+    localrule: True
+    input:
+        get_input_raw_reads()
+    output:
+        get_output_raw_reads()
+    threads: 1
+    resources:
+        mem_mb=1024
+    run:
+        for _i, row in samplesheet.iterrows():
+            Path(row.post_prefix + '_1.fastq').symlink_to(Path(row.original_prefix + '_1_sequence.fastq').resolve())
+            Path(row.post_prefix + '_2.fastq').symlink_to(Path(row.original_prefix + '_2_sequence.fastq').resolve())
+
+rule trim_reads:
+    input:
+        mate_1="data/renamed_fastq/{sample}_1.fastq",
+        mate_2="data/renamed_fastq/{sample}_2.fastq",
+    output:
+        trimmedfq1 = "data/trimmed_reads/{sample}_1_val_1.fq",
+        trimmedfq2 = "data/trimmed_reads/{sample}_2_val_2.fq",
+        logfq1 = "data/logs/trim_reads/{sample}_1.fastq_trimming_report.txt",
+        logfq2 = "data/logs/trim_reads/{sample}_2.fastq_trimming_report.txt",
+        fastqc_trimmed_1 = "data/trimmedFASTQCreports/{sample}_1_val_1_fastqc.html",
+        fastqc_zip_trimmed_1 = "data/trimmedFASTQCreports/{sample}_1_val_1_fastqc.zip",
+        fastqc_trimmed_2 = "data/trimmedFASTQCreports/{sample}_2_val_2_fastqc.html",
+        fastqc_zip_trimmed_2 = "data/trimmedFASTQCreports/{sample}_2_val_2_fastqc.zip"
+    log:
+        "data/logs/trim_reads/{sample}.log"
+    conda:
+        "envs/trim_reads.yaml"
+    threads: 4
+    resources:
+        mem_mb=4096
+    shell:
+        """
+        (trim_galore --cores {threads} --paired --fastqc --output_dir data/trimmed_reads/ {input.mate_1} {input.mate_2}) 2>&1 | tee {log}
+        (mv data/trimmed_reads/{wildcards.sample}_*_trimming_report.txt data/logs/trim_reads/) 2>&1 | tee -a {log}
+        (mv data/trimmed_reads/{wildcards.sample}_*fastqc.html data/trimmedFASTQCreports/) 2>&1 | tee -a {log}
+        (mv data/trimmed_reads/{wildcards.sample}_*fastqc.zip data/trimmedFASTQCreports/) 2>&1 | tee -a {log}
+        """
+
+rule build_salmon_index:
+    input:
+        "data/genomes/{genome}/cdna_with_ERCC.fa.gz"
+    output:
+        directory("data/genomes/{genome}/salmon_index")
+    log:
+        "data/logs/genome_{genome}/build_salmon_index.log"
+    conda:
+        "envs/salmon.yaml"
+    threads: 40
+    resources:
+        mem_mb=16*1024
+    shell:
+        """
+        salmon index -t {input:q} -i {output:q} -p {threads}
+        """
+
+rule salmon_quantification:
+    input:
+        index="data/genomes/{genome}/salmon_index",
+        mate_1="data/trimmed_reads/{sample}_1_val_1.fq",
+        mate_2="data/trimmed_reads/{sample}_2_val_2.fq"
+    output:
+        directory("data/salmon_quantification/{sample}_{genome}")
+    log:
+        "data/logs/salmon_quantification/{sample}_{genome}.log"
+    conda:
+        "envs/salmon.yaml"
+    threads:10
+    resources:
+        mem_mb=8*1024
+    shell:
+        """
+        salmon quant -i {input.index} -l A \
+            -1 {input.mate_1} -2 {input.mate_2} \
+            --threads {threads} \
+            -o {output} \
+            --validateMappings --gcBias \
+            2>&1 | tee {log}
+        """    

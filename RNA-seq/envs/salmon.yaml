@@ -1,0 +1,7 @@
+channels:
+    - bioconda
+    - conda-forge
+    - anaconda
+    - nodefaults
+dependencies:
+    - bioconda::salmon=1.10.3

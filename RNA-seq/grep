@@ -1,0 +1,578 @@
+execve("/usr/bin/sinfo", ["sinfo", "stat"], 0x7ffea6a3c088 /* 70 vars */) = 0
+brk(NULL)                               = 0x1726000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffec5e74e40) = -1 EINVAL (Invalid argument)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7230a98000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/slurm/glibc-hwcaps/x86-64-v4/libslurmfull.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/slurm/glibc-hwcaps/x86-64-v4", 0x7ffec5e74040) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/slurm/glibc-hwcaps/x86-64-v3/libslurmfull.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/slurm/glibc-hwcaps/x86-64-v3", 0x7ffec5e74040) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/slurm/glibc-hwcaps/x86-64-v2/libslurmfull.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/slurm/glibc-hwcaps/x86-64-v2", 0x7ffec5e74040) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/slurm/tls/x86_64/x86_64/libslurmfull.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/slurm/tls/x86_64/x86_64", 0x7ffec5e74040) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/slurm/tls/x86_64/libslurmfull.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/slurm/tls/x86_64", 0x7ffec5e74040) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/slurm/tls/x86_64/libslurmfull.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/slurm/tls/x86_64", 0x7ffec5e74040) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/slurm/tls/libslurmfull.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/slurm/tls", 0x7ffec5e74040) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/slurm/x86_64/x86_64/libslurmfull.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/slurm/x86_64/x86_64", 0x7ffec5e74040) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/slurm/x86_64/libslurmfull.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/slurm/x86_64", 0x7ffec5e74040) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/slurm/x86_64/libslurmfull.so", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/slurm/x86_64", 0x7ffec5e74040) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/slurm/libslurmfull.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\215\5\0\0\0\0\0"..., 832) = 832
+lseek(3, 2298112, SEEK_SET)             = 2298112
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+fstat(3, {st_mode=S_IFREG|0755, st_size=13624904, ...}) = 0
+lseek(3, 2298112, SEEK_SET)             = 2298112
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 4506184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f723041e000
+mprotect(0x7f7230650000, 2093056, PROT_NONE) = 0
+mmap(0x7f723084f000, 86016, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x231000) = 0x7f723084f000
+mmap(0x7f7230864000, 25160, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f7230864000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib64/slurm/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=55271, ...}) = 0
+mmap(NULL, 55271, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7230a8a000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\360n\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=149984, ...}) = 0
+mmap(NULL, 2225344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f72301fe000
+mprotect(0x7f7230219000, 2093056, PROT_NONE) = 0
+mmap(0x7f7230418000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a000) = 0x7f7230418000
+mmap(0x7f723041a000, 13504, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f723041a000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib64/slurm/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib64/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\16\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=19128, ...}) = 0
+mmap(NULL, 2109600, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f722fffa000
+mprotect(0x7f722fffd000, 2093056, PROT_NONE) = 0
+mmap(0x7f72301fc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f72301fc000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib64/slurm/librt.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib64/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000$\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=42744, ...}) = 0
+mmap(NULL, 2128832, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f722fdf2000
+mprotect(0x7f722fdf9000, 2093056, PROT_NONE) = 0
+mmap(0x7f722fff8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f722fff8000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib64/slurm/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib64/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \305\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1598904, ...}) = 0
+mmap(NULL, 3674432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f722fa70000
+mprotect(0x7f722fbf1000, 2093056, PROT_NONE) = 0
+mmap(0x7f722fdf0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x180000) = 0x7f722fdf0000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib64/slurm/libresolv.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib64/libresolv.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`=\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=92976, ...}) = 0
+mmap(NULL, 2194080, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f722f858000
+mprotect(0x7f722f86c000, 2097152, PROT_NONE) = 0
+mmap(0x7f722fa6c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x14000) = 0x7f722fa6c000
+mmap(0x7f722fa6e000, 6816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f722fa6e000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib64/slurm/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib64/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\250\3\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2164640, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7230a88000
+lseek(3, 808, SEEK_SET)                 = 808
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 4020448, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f722f482000
+mprotect(0x7f722f64f000, 2093056, PROT_NONE) = 0
+mmap(0x7f722f84e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1cc000) = 0x7f722f84e000
+mmap(0x7f722f854000, 14560, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f722f854000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7230a85000
+arch_prctl(ARCH_SET_FS, 0x7f7230a85740) = 0
+mprotect(0x7f722f84e000, 16384, PROT_READ) = 0
+mprotect(0x7f722fa6c000, 4096, PROT_READ) = 0
+mprotect(0x7f722fdf0000, 4096, PROT_READ) = 0
+mprotect(0x7f7230418000, 4096, PROT_READ) = 0
+mprotect(0x7f722fff8000, 4096, PROT_READ) = 0
+mprotect(0x7f72301fc000, 4096, PROT_READ) = 0
+mprotect(0x7f723084f000, 20480, PROT_READ) = 0
+mprotect(0x610000, 4096, PROT_READ)     = 0
+mprotect(0x7f7230a9a000, 4096, PROT_READ) = 0
+munmap(0x7f7230a8a000, 55271)           = 0
+set_tid_address(0x7f7230a85a10)         = 150878
+set_robust_list(0x7f7230a85a20, 24)     = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0x7f7230204970, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7f7230210d20}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7f7230204a00, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f7230210d20}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+stat("/etc/slurm/slurm.conf", {st_mode=S_IFREG|0644, st_size=3990, ...}) = 0
+getrandom("\xfc\xf5\xdd\xb8\x87\xcb\x5b\x8e", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x1726000
+brk(0x1747000)                          = 0x1747000
+brk(NULL)                               = 0x1747000
+stat("/etc/slurm/slurm.conf", {st_mode=S_IFREG|0644, st_size=3990, ...}) = 0
+openat(AT_FDCWD, "/etc/slurm/slurm.conf", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3990, ...}) = 0
+read(3, "#\n# Example slurm.conf file. Ple"..., 8192) = 3990
+stat("/home/systems/slurm/etc/slurm/partitions-eofe1.conf", {st_mode=S_IFREG|0644, st_size=24966, ...}) = 0
+stat("/home/systems/slurm/etc/slurm/partitions-eofe1.conf", {st_mode=S_IFREG|0644, st_size=24966, ...}) = 0
+openat(AT_FDCWD, "/home/systems/slurm/etc/slurm/partitions-eofe1.conf", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=24966, ...}) = 0
+brk(NULL)                               = 0x1747000
+brk(0x1769000)                          = 0x1769000
+read(4, "PartitionName=DEFAULT \\\n  MaxTim"..., 8192) = 8192
+brk(NULL)                               = 0x1769000
+brk(0x178a000)                          = 0x178a000
+read(4, "e=24:00:00 \\\n  Nodes=node[156-15"..., 8192) = 8192
+read(4, "ionName=sched_mit_pog_r8 \\\n  Pri"..., 8192) = 8192
+read(4, "342,1344-1355,1357-1366,1368-138"..., 8192) = 390
+brk(NULL)                               = 0x178a000
+brk(0x17ac000)                          = 0x17ac000
+brk(NULL)                               = 0x17ac000
+brk(NULL)                               = 0x17ac000
+brk(0x17a8000)                          = 0x17a8000
+brk(NULL)                               = 0x17a8000
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+stat("/home/systems/slurm/etc/slurm/nodesX.conf", {st_mode=S_IFREG|0644, st_size=1455, ...}) = 0
+stat("/home/systems/slurm/etc/slurm/nodesX.conf", {st_mode=S_IFREG|0644, st_size=1455, ...}) = 0
+openat(AT_FDCWD, "/home/systems/slurm/etc/slurm/nodesX.conf", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1455, ...}) = 0
+read(4, "# NodeName=node019 CPUs=16 Socke"..., 8192) = 1455
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+stat("/home/systems/slurm/etc/slurm/nodes6.conf", {st_mode=S_IFREG|0644, st_size=33962, ...}) = 0
+stat("/home/systems/slurm/etc/slurm/nodes6.conf", {st_mode=S_IFREG|0644, st_size=33962, ...}) = 0
+openat(AT_FDCWD, "/home/systems/slurm/etc/slurm/nodes6.conf", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=33962, ...}) = 0
+read(4, "#NodeName=node027 CPUs=16 Socket"..., 8192) = 8192
+read(4, "rSocket=8 ThreadsPerCore=1 RealM"..., 8192) = 8192
+read(4, "lMemory=258000 Feature=node283,c"..., 8192) = 8192
+read(4, "deName=node354 CPUs=20 SocketsPe"..., 8192) = 8192
+read(4, "node421 CPUs=20 SocketsPerBoard="..., 8192) = 1194
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+stat("/home/systems/slurm/etc/slurm/nodes7.conf", {st_mode=S_IFREG|0644, st_size=179000, ...}) = 0
+stat("/home/systems/slurm/etc/slurm/nodes7.conf", {st_mode=S_IFREG|0644, st_size=179000, ...}) = 0
+openat(AT_FDCWD, "/home/systems/slurm/etc/slurm/nodes7.conf", O_RDONLY) = 4
+mmap(NULL, 180224, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7230a59000
+fstat(4, {st_mode=S_IFREG|0644, st_size=179000, ...}) = 0
+read(4, "NodeName=node001 CPUs=16 Sockets"..., 8192) = 8192
+read(4, "CPUs=16 SocketsPerBoard=2 CoresP"..., 8192) = 8192
+read(4, "de153 CPUs=16 SocketsPerBoard=2 "..., 8192) = 8192
+read(4, "de226 CPUs=16 SocketsPerBoard=2 "..., 8192) = 8192
+read(4, "eature=node364,centos7\nNodeName="..., 8192) = 8192
+brk(NULL)                               = 0x17a8000
+brk(0x17c9000)                          = 0x17c9000
+read(4, "t=14 ThreadsPerCore=1 RealMemory"..., 8192) = 8192
+read(4, "ocketsPerBoard=2 CoresPerSocket="..., 8192) = 8192
+read(4, "RealMemory=128000 Feature=node57"..., 8192) = 8192
+read(4, "me=node641 CPUs=28 SocketsPerBoa"..., 8192) = 8192
+read(4, "rd=2 CoresPerSocket=14 ThreadsPe"..., 8192) = 8192
+read(4, "et=64 ThreadsPerCore=4 RealMemor"..., 8192) = 8192
+brk(NULL)                               = 0x17c9000
+brk(0x17eb000)                          = 0x17eb000
+read(4, "s=256 SocketsPerBoard=1 CoresPer"..., 8192) = 8192
+read(4, "node910,centos7\nNodeName=node911"..., 8192) = 8192
+read(4, "PUs=32 SocketsPerBoard=2 CoresPe"..., 8192) = 8192
+read(4, "ore=1 RealMemory=64000 Feature=n"..., 8192) = 8192
+read(4, "=16 SocketsPerBoard=2 CoresPerSo"..., 8192) = 8192
+read(4, "ket=8 ThreadsPerCore=1 RealMemor"..., 8192) = 8192
+brk(NULL)                               = 0x17eb000
+brk(0x180d000)                          = 0x180d000
+read(4, "e1156 CPUs=40 SocketsPerBoard=2 "..., 8192) = 8192
+read(4, "ThreadsPerCore=1 RealMemory=6300"..., 8192) = 8192
+read(4, "tsPerBoard=8 CoresPerSocket=8 Th"..., 8192) = 8192
+read(4, "resPerSocket=32 ThreadsPerCore=2"..., 8192) = 8192
+read(4, "ory=386000 Feature=node1417,cent"..., 8192) = 6968
+brk(NULL)                               = 0x180d000
+brk(0x182f000)                          = 0x182f000
+read(4, "", 8192)                       = 0
+munmap(0x7f7230a59000, 180224)          = 0
+close(4)                                = 0
+stat("/home/systems/slurm/etc/slurm/nodes8.conf", {st_mode=S_IFREG|0644, st_size=51597, ...}) = 0
+stat("/home/systems/slurm/etc/slurm/nodes8.conf", {st_mode=S_IFREG|0644, st_size=51597, ...}) = 0
+openat(AT_FDCWD, "/home/systems/slurm/etc/slurm/nodes8.conf", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=51597, ...}) = 0
+read(4, "#psfc testing\nNodeName=node484 C"..., 8192) = 8192
+read(4, "PerCore=2 RealMemory=192000 Gres"..., 8192) = 8192
+read(4, "ky8\nNodeName=node4108 CPUs=64 So"..., 8192) = 8192
+read(4, "ard=2 CoresPerSocket=32 ThreadsP"..., 8192) = 8192
+brk(NULL)                               = 0x182f000
+brk(0x1852000)                          = 0x1852000
+read(4, "=node2404 CPUs=64 SocketsPerBoar"..., 8192) = 8192
+read(4, "257000 Feature=node2520,rocky8\nN"..., 8192) = 8192
+read(4, "ocky8\n\n#pi_abodner\nNodeName=node"..., 8192) = 2445
+read(4, "", 8192)                       = 0
+close(4)                                = 0
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+stat("/bin/mail", {st_mode=S_IFREG|0755, st_size=400536, ...}) = 0
+stat("/usr/lib64/slurm", {st_mode=S_IFDIR|0755, st_size=8192, ...}) = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2120, ...}) = 0
+read(3, "#\n# /etc/nsswitch.conf\n#\n# Name "..., 4096) = 2120
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib64/slurm/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=55271, ...}) = 0
+mmap(NULL, 55271, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7230a8a000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib64/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260'\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=54360, ...}) = 0
+mmap(NULL, 2172760, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f722f26f000
+mprotect(0x7f722f27a000, 2097152, PROT_NONE) = 0
+mmap(0x7f722f47a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb000) = 0x7f722f47a000
+mmap(0x7f722f47c000, 22360, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f722f47c000
+close(3)                                = 0
+mprotect(0x7f722f47a000, 4096, PROT_READ) = 0
+munmap(0x7f7230a8a000, 55271)           = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2756, ...}) = 0
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 2756
+close(3)                                = 0
+stat("/usr/lib64/slurm/auth_munge.so", {st_mode=S_IFREG|0755, st_size=255192, ...}) = 0
+openat(AT_FDCWD, "/usr/lib64/slurm/auth_munge.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\27\0\0\0\0\0\0"..., 832) = 832
+lseek(3, 11656, SEEK_SET)               = 11656
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+fstat(3, {st_mode=S_IFREG|0755, st_size=255192, ...}) = 0
+lseek(3, 11656, SEEK_SET)               = 11656
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 2113864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f722f06a000
+mprotect(0x7f722f06d000, 2097152, PROT_NONE) = 0
+mmap(0x7f722f26d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7f722f26d000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib64/glibc-hwcaps/x86-64-v4/libmunge.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/glibc-hwcaps/x86-64-v4", 0x7ffec5e73ab0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/glibc-hwcaps/x86-64-v3/libmunge.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/glibc-hwcaps/x86-64-v3", 0x7ffec5e73ab0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/glibc-hwcaps/x86-64-v2/libmunge.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/glibc-hwcaps/x86-64-v2", 0x7ffec5e73ab0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/tls/x86_64/x86_64/libmunge.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/tls/x86_64/x86_64", 0x7ffec5e73ab0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/tls/x86_64/libmunge.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/tls/x86_64", 0x7ffec5e73ab0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/tls/x86_64/libmunge.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/tls/x86_64", 0x7ffec5e73ab0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/tls/libmunge.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/tls", {st_mode=S_IFDIR|0555, st_size=6, ...}) = 0
+openat(AT_FDCWD, "/usr/lib64/x86_64/x86_64/libmunge.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/x86_64/x86_64", 0x7ffec5e73ab0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/x86_64/libmunge.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/x86_64", 0x7ffec5e73ab0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/x86_64/libmunge.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/lib64/x86_64", 0x7ffec5e73ab0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib64/libmunge.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 \33\0\0\0\0\0\0"..., 832) = 832
+lseek(3, 32992, SEEK_SET)               = 32992
+read(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\1\0\0\300\4\0\0\0\30\0\0\0\0\0\0\0"..., 48) = 48
+fstat(3, {st_mode=S_IFREG|0755, st_size=42432, ...}) = 0
+lseek(3, 32992, SEEK_SET)               = 32992
+read(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\1\0\0\300\4\0\0\0\30\0\0\0\0\0\0\0"..., 48) = 48
+mmap(NULL, 2134888, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f722ee60000
+mprotect(0x7f722ee69000, 2093056, PROT_NONE) = 0
+mmap(0x7f722f068000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f722f068000
+close(3)                                = 0
+mprotect(0x7f722f068000, 4096, PROT_READ) = 0
+mprotect(0x7f722f26d000, 4096, PROT_READ) = 0
+stat("/usr/lib64/slurm/hash_k12.so", {st_mode=S_IFREG|0755, st_size=826520, ...}) = 0
+openat(AT_FDCWD, "/usr/lib64/slurm/hash_k12.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\30\0\0\0\0\0\0"..., 832) = 832
+lseek(3, 90640, SEEK_SET)               = 90640
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+fstat(3, {st_mode=S_IFREG|0755, st_size=826520, ...}) = 0
+lseek(3, 90640, SEEK_SET)               = 90640
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 2191664, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f722ec48000
+mprotect(0x7f722ec5f000, 2093056, PROT_NONE) = 0
+mmap(0x7f722ee5e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f722ee5e000
+close(3)                                = 0
+mprotect(0x7f722ee5e000, 4096, PROT_READ) = 0
+stat("/usr/lib64/slurm/tls_none.so", {st_mode=S_IFREG|0755, st_size=201376, ...}) = 0
+openat(AT_FDCWD, "/usr/lib64/slurm/tls_none.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\t\0\0\0\0\0\0"..., 832) = 832
+lseek(3, 4008, SEEK_SET)                = 4008
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+fstat(3, {st_mode=S_IFREG|0755, st_size=201376, ...}) = 0
+lseek(3, 4008, SEEK_SET)                = 4008
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 2105432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f722ea45000
+mprotect(0x7f722ea46000, 2097152, PROT_NONE) = 0
+mmap(0x7f722ec46000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f722ec46000
+close(3)                                = 0
+mprotect(0x7f722ec46000, 4096, PROT_READ) = 0
+stat("/usr/lib64/slurm/accounting_storage_slurmdbd.so", {st_mode=S_IFREG|0755, st_size=758144, ...}) = 0
+openat(AT_FDCWD, "/usr/lib64/slurm/accounting_storage_slurmdbd.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260i\0\0\0\0\0\0"..., 832) = 832
+lseek(3, 93232, SEEK_SET)               = 93232
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+fstat(3, {st_mode=S_IFREG|0755, st_size=758144, ...}) = 0
+lseek(3, 93232, SEEK_SET)               = 93232
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 2195376, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f722e82d000
+mprotect(0x7f722e844000, 2093056, PROT_NONE) = 0
+mmap(0x7f722ea43000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f722ea43000
+close(3)                                = 0
+mprotect(0x7f722ea43000, 4096, PROT_READ) = 0
+stat("/usr/lib64/slurm/cred_munge.so", {st_mode=S_IFREG|0755, st_size=333864, ...}) = 0
+openat(AT_FDCWD, "/usr/lib64/slurm/cred_munge.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200%\0\0\0\0\0\0"..., 832) = 832
+lseek(3, 25752, SEEK_SET)               = 25752
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+fstat(3, {st_mode=S_IFREG|0755, st_size=333864, ...}) = 0
+lseek(3, 25752, SEEK_SET)               = 25752
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 2128072, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f722e625000
+mprotect(0x7f722e62c000, 2093056, PROT_NONE) = 0
+mmap(0x7f722e82b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f722e82b000
+close(3)                                = 0
+mprotect(0x7f722e82b000, 4096, PROT_READ) = 0
+getpid()                                = 150878
+socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 3
+bind(3, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+getsockname(3, {sa_family=AF_NETLINK, nl_pid=150878, nl_groups=00000000}, [12]) = 0
+sendto(3, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1747964805, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1136, tstamp=2232}]]], [{nlmsg_len=92, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("eno12399np0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.1.221.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.1.221.1")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.1.255.255")], [{nla_len=16, nla_type=IFA_LABEL}, "eno12399np0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1800, tstamp=1800}]]], [{nlmsg_len=92, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("mit-bridge")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("18.13.54.20")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("18.13.54.20")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("18.13.54.255")], [{nla_len=15, nla_type=IFA_LABEL}, "mit-bridge"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1800, tstamp=1800}]]], [{nlmsg_len=84, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("ib0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("172.16.221.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("172.16.221.1")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("172.16.255.255")], [{nla_len=8, nla_type=IFA_LABEL}, "ib0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2308, tstamp=2308}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("virbr0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("192.168.122.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("192.168.122.1")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("192.168.122.255")], [{nla_len=11, nla_type=IFA_LABEL}, "virbr0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=5022, tstamp=5022}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 432
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1136, tstamp=1136}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], [{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("eno12399np0")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::d604:e6ff:fe6f:1f40")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1800, tstamp=1800}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], [{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("ib0")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::5aa2:e103:f5:1f02")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=4088, tstamp=4088}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], [{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("vnet0")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::fc99:aff:fe01:dd0b")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=56684, tstamp=56684}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], [{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("vnet1")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::fc54:ff:fecb:5fd9")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=56689, tstamp=56689}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], [{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("vnet2")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::fc54:ff:fecb:5fd9")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=56693, tstamp=56693}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 432
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 4
+connect(4, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(4)                                = 0
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+stat("/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=99, ...}) = 0
+openat(AT_FDCWD, "/etc/host.conf", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=9, ...}) = 0
+read(3, "multi on\n", 4096)             = 9
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+futex(0x7f722f856a04, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/etc/resolv.conf", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=99, ...}) = 0
+read(3, "; \n; \n; generated by salt\n;\n;\nse"..., 4096) = 99
+read(3, "", 4096)                       = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=99, ...}) = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=150, ...}) = 0
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "127.0.0.1\t\tlocalhost localhost.l"..., 4096) = 150
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib64/slurm/libnss_dns.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=55271, ...}) = 0
+mmap(NULL, 55271, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f7230a8a000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib64/libnss_dns.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\22\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=29264, ...}) = 0
+mmap(NULL, 2121968, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f722e41e000
+mprotect(0x7f722e423000, 2097152, PROT_NONE) = 0
+mmap(0x7f722e623000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x5000) = 0x7f722e623000
+close(3)                                = 0
+mprotect(0x7f722e623000, 4096, PROT_READ) = 0
+munmap(0x7f7230a8a000, 55271)           = 0
+socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 3
+setsockopt(3, SOL_IP, IP_RECVERR, [1], 4) = 0
+connect(3, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("10.1.222.2")}, 16) = 0
+poll([{fd=3, events=POLLOUT}], 1, 0)    = 1 ([{fd=3, revents=POLLOUT}])
+sendto(3, "\214\310\1\0\0\1\0\0\0\0\0\0\10slurm001\6inband\0\0\1\0"..., 33, MSG_NOSIGNAL, NULL, 0) = 33
+poll([{fd=3, events=POLLIN}], 1, 5000)  = 1 ([{fd=3, revents=POLLIN}])
+ioctl(3, FIONREAD, [49])                = 0
+recvfrom(3, "\214\310\205\200\0\1\0\1\0\0\0\0\10slurm001\6inband\0\0\1\0"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("10.1.222.2")}, [28 => 16]) = 49
+close(3)                                = 0
+socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP) = 3
+setsockopt(3, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+connect(3, {sa_family=AF_INET, sin_port=htons(7817), sin_addr=inet_addr("10.1.224.21")}, 128) = -1 EINPROGRESS (Operation now in progress)
+poll([{fd=3, events=POLLIN|POLLOUT}], 1, 2000) = 1 ([{fd=3, revents=POLLOUT}])
+fcntl(3, F_SETFL, O_RDWR)               = 0
+rt_sigaction(SIGALRM, {sa_handler=SIG_DFL, sa_mask=[ALRM], sa_flags=SA_RESTORER, sa_restorer=0x7f7230210d20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+stat("/var/run/munge/munge.socket.2", {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+socket(AF_UNIX, SOCK_STREAM, 0)         = 4
+fcntl(4, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(4, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+connect(4, {sa_family=AF_UNIX, sun_path="/var/run/munge/munge.socket.2"}, 110) = 0
+writev(4, [{iov_base="\0`mK\4\2\0\0\0\0005", iov_len=11}, {iov_base="\1\1\1\0\0\0\0\0\377\377\377\377\377\377\377\377\0\0\0!\2\275V\375\251\"^\206LGl\244"..., iov_len=53}], 2) = 64
+read(4, 0x7ffec5e743cd, 11)             = -1 EAGAIN (Resource temporarily unavailable)
+poll([{fd=4, events=POLLIN}], 1, 2000)  = 1 ([{fd=4, revents=POLLIN}])
+read(4, "\0`mK\4\3\0\0\0\0\302", 11)    = 11
+read(4, "\0\0\0\0\0\274MUNGE:AwQFAAAD7XrHoKWsBNYs"..., 194) = 194
+close(4)                                = 0
+rt_sigaction(SIGALRM, {sa_handler=SIG_DFL, sa_mask=[ALRM], sa_flags=SA_RESTORER, sa_restorer=0x7f7230210d20}, {sa_handler=SIG_DFL, sa_mask=[ALRM], sa_flags=SA_RESTORER, sa_restorer=0x7f7230210d20}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER, sa_restorer=0x7f7230210d20}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=0}, 8) = 0
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+poll([{fd=3, events=POLLOUT}], 1, 60000) = 1 ([{fd=3, revents=POLLOUT}])
+recvfrom(3, 0x7ffec5e74636, 1, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+writev(3, [{iov_base="\0\0\0\336", iov_len=4}, {iov_base="*\0\0\0\7\331\0\0\0\n\0\0\0\0\0\0", iov_len=16}, {iov_base="\0\0\0e\0\0\0\274MUNGE:AwQFAAAD7XrHoKWsBN"..., iov_len=196}, {iov_base="\0\0\0\0\0\0\0\0\0\30", iov_len=10}], 4) = 226
+fcntl(3, F_SETFL, O_RDWR)               = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER, sa_restorer=0x7f7230210d20}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER, sa_restorer=0x7f7230210d20}, 8) = 0
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+poll([{fd=3, events=POLLIN}], 1, 60000) = 1 ([{fd=3, revents=POLLIN}])
+recvfrom(3, "\0\0\30\246", 4, 0, NULL, NULL) = 4
+fcntl(3, F_SETFL, O_RDWR)               = 0
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+poll([{fd=3, events=POLLIN}], 1, 60000) = 1 ([{fd=3, revents=POLLIN}])
+recvfrom(3, "*\0\0D\7\332\0\0\30\226\0\0\0\0\0\0\0\0\0\10\0\0\0\0h/\323\205\0\0\0\24"..., 6310, 0, NULL, NULL) = 6310
+fcntl(3, F_SETFL, O_RDWR)               = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/lib64/slurm", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0755, st_size=8192, ...}) = 0
+getdents64(3, 0x1842260 /* 80 entries */, 32768) = 3352
+getdents64(3, 0x1842260 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+stat("/usr/lib64/slurm/select_linear.so", {st_mode=S_IFREG|0755, st_size=412504, ...}) = 0
+openat(AT_FDCWD, "/usr/lib64/slurm/select_linear.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200.\0\0\0\0\0\0"..., 832) = 832
+lseek(3, 37568, SEEK_SET)               = 37568
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+fstat(3, {st_mode=S_IFREG|0755, st_size=412504, ...}) = 0
+lseek(3, 37568, SEEK_SET)               = 37568
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 2140976, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f722e213000
+mprotect(0x7f722e21d000, 2093056, PROT_NONE) = 0
+mmap(0x7f722e41c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f722e41c000
+close(3)                                = 0
+mprotect(0x7f722e41c000, 4096, PROT_READ) = 0
+stat("/usr/lib64/slurm/select_cons_tres.so", {st_mode=S_IFREG|0755, st_size=1074616, ...}) = 0
+openat(AT_FDCWD, "/usr/lib64/slurm/select_cons_tres.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000j\0\0\0\0\0\0"..., 832) = 832
+lseek(3, 137800, SEEK_SET)              = 137800
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+fstat(3, {st_mode=S_IFREG|0755, st_size=1074616, ...}) = 0
+lseek(3, 137800, SEEK_SET)              = 137800
+read(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32) = 32
+mmap(NULL, 2240432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f722dff0000
+mprotect(0x7f722e012000, 2093056, PROT_NONE) = 0
+mmap(0x7f722e211000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21000) = 0x7f722e211000
+close(3)                                = 0
+mprotect(0x7f722e211000, 4096, PROT_READ) = 0
+getpid()                                = 150878
+socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 3
+bind(3, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+getsockname(3, {sa_family=AF_NETLINK, nl_pid=150878, nl_groups=00000000}, [12]) = 0
+sendto(3, [{nlmsg_len=20, nlmsg_type=RTM_GETADDR, nlmsg_flags=NLM_F_REQUEST|NLM_F_DUMP, nlmsg_seq=1747964805, nlmsg_pid=0}, {ifa_family=AF_UNSPEC, ...}], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET, ifa_prefixlen=8, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("127.0.0.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("127.0.0.1")], [{nla_len=7, nla_type=IFA_LABEL}, "lo"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1136, tstamp=2232}]]], [{nlmsg_len=92, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("eno12399np0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("10.1.221.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("10.1.221.1")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("10.1.255.255")], [{nla_len=16, nla_type=IFA_LABEL}, "eno12399np0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1800, tstamp=1800}]]], [{nlmsg_len=92, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("mit-bridge")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("18.13.54.20")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("18.13.54.20")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("18.13.54.255")], [{nla_len=15, nla_type=IFA_LABEL}, "mit-bridge"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1800, tstamp=1800}]]], [{nlmsg_len=84, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET, ifa_prefixlen=16, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("ib0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("172.16.221.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("172.16.221.1")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("172.16.255.255")], [{nla_len=8, nla_type=IFA_LABEL}, "ib0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT|IFA_F_NOPREFIXROUTE], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=2308, tstamp=2308}]]], [{nlmsg_len=88, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET, ifa_prefixlen=24, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_UNIVERSE, ifa_index=if_nametoindex("virbr0")}, [[{nla_len=8, nla_type=IFA_ADDRESS}, inet_addr("192.168.122.1")], [{nla_len=8, nla_type=IFA_LOCAL}, inet_addr("192.168.122.1")], [{nla_len=8, nla_type=IFA_BROADCAST}, inet_addr("192.168.122.255")], [{nla_len=11, nla_type=IFA_LABEL}, "virbr0"], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=5022, tstamp=5022}]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 432
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET6, ifa_prefixlen=128, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_HOST, ifa_index=if_nametoindex("lo")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "::1")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1136, tstamp=1136}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], [{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("eno12399np0")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::d604:e6ff:fe6f:1f40")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=1800, tstamp=1800}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], [{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("ib0")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::5aa2:e103:f5:1f02")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=4088, tstamp=4088}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], [{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("vnet0")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::fc99:aff:fe01:dd0b")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=56684, tstamp=56684}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], [{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("vnet1")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::fc54:ff:fecb:5fd9")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=56689, tstamp=56689}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]], [{nlmsg_len=72, nlmsg_type=RTM_NEWADDR, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, {ifa_family=AF_INET6, ifa_prefixlen=64, ifa_flags=IFA_F_PERMANENT, ifa_scope=RT_SCOPE_LINK, ifa_index=if_nametoindex("vnet2")}, [[{nla_len=20, nla_type=IFA_ADDRESS}, inet_pton(AF_INET6, "fe80::fc54:ff:fecb:5fd9")], [{nla_len=20, nla_type=IFA_CACHEINFO}, {ifa_prefered=4294967295, ifa_valid=4294967295, cstamp=56693, tstamp=56693}], [{nla_len=8, nla_type=IFA_FLAGS}, IFA_F_PERMANENT]]]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 432
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1747964805, nlmsg_pid=150878}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+close(3)                                = 0
+stat("/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=99, ...}) = 0
+openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=150, ...}) = 0
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "127.0.0.1\t\tlocalhost localhost.l"..., 4096) = 150
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+socket(AF_INET, SOCK_DGRAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP) = 3
+setsockopt(3, SOL_IP, IP_RECVERR, [1], 4) = 0
+connect(3, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("10.1.222.2")}, 16) = 0
+poll([{fd=3, events=POLLOUT}], 1, 0)    = 1 ([{fd=3, revents=POLLOUT}])
+sendto(3, "\22Y\1\0\0\1\0\0\0\0\0\0\10slurm001\6inband\0\0\1\0"..., 33, MSG_NOSIGNAL, NULL, 0) = 33
+poll([{fd=3, events=POLLIN}], 1, 5000)  = 1 ([{fd=3, revents=POLLIN}])
+ioctl(3, FIONREAD, [49])                = 0
+recvfrom(3, "\22Y\205\200\0\1\0\1\0\0\0\0\10slurm001\6inband\0\0\1\0"..., 1024, 0, {sa_family=AF_INET, sin_port=htons(53), sin_addr=inet_addr("10.1.222.2")}, [28 => 16]) = 49
+close(3)                                = 0
+socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP) = 3
+setsockopt(3, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+connect(3, {sa_family=AF_INET, sin_port=htons(7817), sin_addr=inet_addr("10.1.224.21")}, 128) = -1 EINPROGRESS (Operation now in progress)
+poll([{fd=3, events=POLLIN|POLLOUT}], 1, 2000) = 1 ([{fd=3, revents=POLLOUT}])
+fcntl(3, F_SETFL, O_RDWR)               = 0
+rt_sigaction(SIGALRM, {sa_handler=SIG_DFL, sa_mask=[ALRM], sa_flags=SA_RESTORER, sa_restorer=0x7f7230210d20}, {sa_handler=SIG_DFL, sa_mask=[ALRM], sa_flags=SA_RESTORER, sa_restorer=0x7f7230210d20}, 8) = 0
+stat("/var/run/munge/munge.socket.2", {st_mode=S_IFSOCK|0777, st_size=0, ...}) = 0
+socket(AF_UNIX, SOCK_STREAM, 0)         = 4
+fcntl(4, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(4, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+connect(4, {sa_family=AF_UNIX, sun_path="/var/run/munge/munge.socket.2"}, 110) = 0
+writev(4, [{iov_base="\0`mK\4\2\0\0\0\0005", iov_len=11}, {iov_base="\1\1\1\0\0\0\0\0\377\377\377\377\377\377\377\377\0\0\0!\2gtGe:L\24uXHQ"..., iov_len=53}], 2) = 64
+read(4, 0x7ffec5e7439d, 11)             = -1 EAGAIN (Resource temporarily unavailable)
+poll([{fd=4, events=POLLIN}], 1, 2000)  = 1 ([{fd=4, revents=POLLIN|POLLHUP}])
+read(4, "\0`mK\4\3\0\0\0\0\302", 11)    = 11
+read(4, "\0\0\0\0\0\274MUNGE:AwQFAADG0CocsF9+hRHa"..., 194) = 194
+close(4)                                = 0
+rt_sigaction(SIGALRM, {sa_handler=SIG_DFL, sa_mask=[ALRM], sa_flags=SA_RESTORER, sa_restorer=0x7f7230210d20}, {sa_handler=SIG_DFL, sa_mask=[ALRM], sa_flags=SA_RESTORER, sa_restorer=0x7f7230210d20}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER, sa_restorer=0x7f7230210d20}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER, sa_restorer=0x7f7230210d20}, 8) = 0
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+poll([{fd=3, events=POLLOUT}], 1, 60000) = 1 ([{fd=3, revents=POLLOUT}])
+recvfrom(3, 0x7ffec5e74606, 1, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+writev(3, [{iov_base="\0\0\0\336", iov_len=4}, {iov_base="*\0\0\0\7\327\0\0\0\n\0\0\0\0\0\0", iov_len=16}, {iov_base="\0\0\0e\0\0\0\274MUNGE:AwQFAADG0CocsF9+hR"..., iov_len=196}, {iov_base="\0\0\0\0\0\0\0\0\0\30", iov_len=10}], 4) = 226
+fcntl(3, F_SETFL, O_RDWR)               = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER, sa_restorer=0x7f7230210d20}, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER, sa_restorer=0x7f7230210d20}, 8) = 0
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+poll([{fd=3, events=POLLIN}], 1, 60000) = 1 ([{fd=3, revents=POLLIN}])
+recvfrom(3, "\0\2\344\261", 4, 0, NULL, NULL) = 4
+fcntl(3, F_SETFL, O_RDWR)               = 0
+mmap(NULL, 192512, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f7230a56000
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK)    = 0
+poll([{fd=3, events=POLLIN}], 1, 60000) = 1 ([{fd=3, revents=POLLIN}])
+recvfrom(3, "*\0\0D\7\330\0\2\344\241\0\0\0\0\0\0\0\0\7#\0\0\0\0h/\323\206\0\0\7#"..., 189617, 0, NULL, NULL) = 130316
+poll([{fd=3, events=POLLIN}], 1, 60000) = 1 ([{fd=3, revents=POLLIN}])
+recvfrom(3, "\0\36\212\377\377\377\376\0 \0\3\0\0\0\01024.11.3\0\0(\0\1\0\2\0\24\0"..., 59301, 0, NULL, NULL) = 28960
+poll([{fd=3, events=POLLIN}], 1, 60000) = 1 ([{fd=3, revents=POLLIN}])
+recvfrom(3, "\0\0\0\0\22gpu:l40s:4(S:0-1)\0\0\0\0\0\0\0\0\0\0"..., 30341, 0, NULL, NULL) = 30341
+fcntl(3, F_SETFL, O_RDWR)               = 0
+mmap(NULL, 675840, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f72309b1000
+brk(NULL)                               = 0x1852000
+brk(0x1873000)                          = 0x1873000
+brk(NULL)                               = 0x1873000
+brk(0x1894000)                          = 0x1894000
+munmap(0x7f7230a56000, 192512)          = 0
+close(3)                                = 0
+mmap(NULL, 1052672, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f72308b0000
+mprotect(0x7f72308b1000, 1048576, PROT_READ|PROT_WRITE) = 0
+clone(child_stack=0x7f72309affb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[151024], tls=0x7f72309b0700, child_tidptr=0x7f72309b09d0) = 151024
+mmap(NULL, 1052672, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f722deef000
+mprotect(0x7f722def0000, 1048576, PROT_READ|PROT_WRITE) = 0
+clone(child_stack=0x7f722dfeefb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[151025], tls=0x7f722dfef700, child_tidptr=0x7f722dfef9d0) = 151025
+clone(child_stack=0x7f72309affb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[151026], tls=0x7f72309b0700, child_tidptr=0x7f72309b09d0) = 151026
+clone(child_stack=0x7f722dfeefb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[151027], tls=0x7f722dfef700, child_tidptr=0x7f722dfef9d0) = 151027
+mmap(NULL, 1052672, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f722ddee000
+mprotect(0x7f722ddef000, 1048576, PROT_READ|PROT_WRITE) = 0
+clone(child_stack=0x7f722deedfb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[151028], tls=0x7f722deee700, child_tidptr=0x7f722deee9d0) = 151028
+mmap(NULL, 1052672, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7f722dced000
+mprotect(0x7f722dcee000, 1048576, PROT_READ|PROT_WRITE) = 0
+clone(child_stack=0x7f722ddecfb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[151029], tls=0x7f722dded700, child_tidptr=0x7f722dded9d0) = 151029
+clone(child_stack=0x7f72309affb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[151030], tls=0x7f72309b0700, child_tidptr=0x7f72309b09d0) = 151030
+clone(child_stack=0x7f722deedfb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[151031], tls=0x7f722deee700, child_tidptr=0x7f722deee9d0) = 151031
+futex(0x611f28, FUTEX_WAIT_PRIVATE, 0, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+futex(0x611f40, FUTEX_WAKE_PRIVATE, 1)  = 0
+futex(0x611f2c, FUTEX_WAIT_PRIVATE, 0, NULL) = 0
+futex(0x611f40, FUTEX_WAKE_PRIVATE, 1)  = 0
+fstat(1, {st_mode=S_IFCHR|0666, st_rdev=makedev(0x1, 0x3), ...}) = 0
+ioctl(1, TCGETS, 0x7ffec5e743d0)        = -1 ENOTTY (Inappropriate ioctl for device)
+write(1, "PARTITION            AVAIL  TIME"..., 2998) = 2998
+exit_group(0)                           = ?
++++ exited with 0 +++

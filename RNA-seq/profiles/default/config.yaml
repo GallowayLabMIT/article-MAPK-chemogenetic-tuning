@@ -1,0 +1,5 @@
+executor: slurm
+jobs: 40
+use-conda: True
+default-resources:
+  slurm_partition: mit_normal
