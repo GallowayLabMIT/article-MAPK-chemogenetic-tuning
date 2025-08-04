@@ -1,5 +1,5 @@
 # Chemogenetic tuning reveals optimal MAPK signaling for cell-fate programming
-This repo contains all data analysis and code to create the figures in [Lende-Dorn et al. "Chemogenetic tuning reveals optimal MAPK signaling for cell-fate programming"](https://doi.org/10.1101/2024.12.19.629350).
+This repo contains all data analysis and code to create the figures in Lende-Dorn et al. "Chemogenetic tuning reveals optimal MAPK signaling for cell-fate programming".
 
 # Python setup
 1. Create a virtual environment in the repository directory using python -m venv env
